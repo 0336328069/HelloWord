@@ -1,0 +1,39 @@
+.mgi__login-form{
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+input{
+    border: 1px solid #ccc;
+}
+#password:focus,
+#username:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+#remember{
+    display: none;
+    
+}
+.mgi__checkbox{
+    position: relative;
+    border: 1px solid #ccc;
+}
+.mgi__checkbox::after{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#remember:checked ~ .mgi__checkbox{
+    background-color: #2196F3;
+}
